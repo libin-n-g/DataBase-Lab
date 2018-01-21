@@ -1,0 +1,122 @@
+MariaDB [(none)]> CREATE DATABASE expert_system_libin_n_george;
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [(none)]> use expert_system_libin_n_george 
+Database changed
+
+MariaDB [expert_system_libin_n_george]> CREATE TABLE authors(
+    -> aid INT NOT NULL,
+    -> name VARCHAR(30) NOT NULL,
+    -> PRIMARY KEY(aid)
+    -> );
+Query OK, 0 rows affected (0.26 sec)
+
+
+MariaDB [expert_system_libin_n_george]> CREATE TABLE papers (
+    -> pid INT NOT NULL,
+    -> title VARCHAR(200) NOT NULL,
+    -> corresponding_author INT NOT NULL references authors(aid) ON DELETE NO ACTION,
+    -> PRIMARY KEY(PID));
+Query OK, 0 rows affected (0.28 sec)
+
+
+MariaDB [expert_system_libin_n_george]> CREATE TABLE year (
+    -> pid INT NOT NULL REFERENCES papers(pid) ON DELETE CASCADE,
+    -> published_year INT NOT NULL,
+    -> PRIMARY KEY(pid)
+    -> );
+Query OK, 0 rows affected (0.38 sec)
+
+MariaDB [expert_system_libin_n_george]> CREATE TABLE written_by (
+    -> pid INT NOT NULL references papers(pid) ON DELETE CASCADE,
+    -> PRIMARY KEY(pid),
+    -> aid INT NOT NULL references authors(aid) ON DELETE NO ACTION
+    -> );
+Query OK, 0 rows affected (0.28 sec)
+
+MariaDB [expert_system_libin_n_george]> INSERT INTO authors (aid, name)
+    -> VALUES
+    -> (1, 'M. Rudolph'),
+    -> (2, 'F. Ruiz'),
+    -> (3, 'S. Athey'),
+    -> (4, 'D. Blei'),
+    -> (5, 'J. Manning'),
+    -> (6, 'R. Ranganath'),
+    -> (7, 'K. Norman'),
+    -> (8, 'L. Lei'),
+    -> (9, 'C. Ju'),
+    -> (10, 'J. Chen'),
+    -> (11, 'M. I. Jordan'),
+    -> (12, 'F. Wauthier'),
+    -> (13, 'N. Jojic'),
+    -> (14, 'Sahely Bhadra'),
+    -> (15, 'Samuel Kashi'),
+    -> (16, 'Juho Rousu');
+Query OK, 16 rows affected (0.04 sec)
+Records: 16  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_libin_n_george]> select * from authors;
++-----+---------------+
+| aid | name          |
++-----+---------------+
+|   1 | M. Rudolph    |
+|   2 | F. Ruiz       |
+|   3 | S. Athey      |
+|   4 | D. Blei       |
+|   5 | J. Manning    |
+|   6 | R. Ranganath  |
+|   7 | K. Norman     |
+|   8 | L. Lei        |
+|   9 | C. Ju         |
+|  10 | J. Chen       |
+|  11 | M. I. Jordan  |
+|  12 | F. Wauthier   |
+|  13 | N. Jojic      |
+|  14 | Sahely Bhadra |
+|  15 | Samuel Kashi  |
+|  16 | Juho Rousu    |
++-----+---------------+
+16 rows in set (0.00 sec)
+
+MariaDB [expert_system_libin_n_george]> INSERT INTO papers (pid, title, corresponding_author) VALUES
+    -> (1,'Structured embedding models for grouped data​', 4),
+    -> (2,'​ Topographic factor analysis: A Bayesian model for inferring brain networks from neural data​', 4),
+    -> (3,'Nonconvex finite-sum optimization via SCSG methods​', 11),
+    -> (4,'Nonparametric combinatorial sequence models​​', 11),
+    -> (5,'Multi-view kernel completion​', 14);
+Query OK, 5 rows affected (0.04 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_libin_n_george]> select * from papers;
++-----+----------------------------------------------------------------------------------------------------+----------------------+
+| pid | title                                                                                              | corresponding_author |
++-----+----------------------------------------------------------------------------------------------------+----------------------+
+|   1 | Structured embedding models for grouped data​                                                       |                    4 |
+|   2 | ​ Topographic factor analysis: A Bayesian model for inferring brain networks from neural data​       |                    4 |
+|   3 | Nonconvex finite-sum optimization via SCSG methods​                                                 |                   11 |
+|   4 | Nonparametric combinatorial sequence models​​                                                        |                   11 |
+|   5 | Multi-view kernel completion​                                                                       |                   14 |
++-----+----------------------------------------------------------------------------------------------------+----------------------+
+
+MariaDB [expert_system_libin_n_george]> INSERT INTO year (pid, published_year) VALUES
+    -> (1, 2017),
+    -> (2, 2014),
+    -> (3, 2018),
+    -> (4, 2011),
+    -> (5, 2017);
+Query OK, 5 rows affected (0.06 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_libin_n_george]> select * from year;
++-----+----------------+
+| pid | published_year |
++-----+----------------+
+|   1 |           2017 |
+|   2 |           2014 |
+|   3 |           2018 |
+|   4 |           2011 |
+|   5 |           2017 |
++-----+----------------+
+5 rows in set (0.00 sec)
+
+
