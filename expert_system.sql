@@ -199,8 +199,15 @@ INSERT INTO conferences (name, year) VALUES
 ('INTERNATIONAL JOURNAL OF APPROXIMATE REASONING, 88:110-127', 2017)
 ;
 ALTER TABLE papers 
-ADD cid INT NOT NULL ;
- 
+ADD cid INT NOT NULL;
+
+CREATE TABLE reviewed_by (
+reviewer VARCHAR(100) NOT NULL,
+pid INT NOT NULL,
+FOREIGN KEY(pid) references papers(pid) ON DELETE CASCADE,
+PRIMARY KEY(pid, reviewer)
+);
+
 UPDATE papers AS P
 SET P.cid = 1
 WHERE P.title = 'Structured embedding models for grouped data​';
@@ -238,3 +245,15 @@ ALTER TABLE papers
 ADD CONSTRAINT FOREIGN KEY (cid) REFERENCES conferences(cid) ON DELETE NO ACTION ;
 
 SELECT P.title, C.name, C.year FROM papers AS P , conferences AS C WHERE P.cid=C.cid ORDER BY C.name ASC, C.year DESC;
+
+
+ALTER TABLE papers 
+ADD editer VARCHAR(60) NOT NULL;
+
+CREATE TABLE paper_subjects (
+fid INT NOT NULL, 
+FOREIGN KEY(fid) references fields(fid) ON DELETE NO ACTION,
+pid INT NOT NULL,
+FOREIGN KEY(pid) references papers(pid) ON DELETE CASCADE,
+PRIMARY KEY(pid, fid)
+);
