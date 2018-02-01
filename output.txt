@@ -1,0 +1,385 @@
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 12
+Server version: 10.0.33-MariaDB-0ubuntu0.16.04.1 Ubuntu 16.04
+
+Copyright (c) 2000, 2017, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> Query OK, 1 row affected (0.00 sec)
+
+MariaDB [(none)]> Database changed
+MariaDB [expert_system_2_libin_n_george]> Query OK, 0 rows affected (0.29 sec)
+
+MariaDB [expert_system_2_libin_n_george]> +------------+-------------+------+-----+---------+----------------+
+| Field      | Type        | Null | Key | Default | Extra          |
++------------+-------------+------+-----+---------+----------------+
+| paper_id   | int(11)     | NO   | PRI | NULL    | auto_increment |
+| title      | varchar(50) | NO   | UNI | NULL    |                |
+| year       | int(11)     | NO   |     | NULL    |                |
+| conference | varchar(50) | NO   |     | NULL    |                |
++------------+-------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> Query OK, 0 rows affected (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> Query OK, 0 rows affected (0.00 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]>     ->     ->     ->     ->     ->     ->     ->     -> Query OK, 8 rows affected, 5 warnings (0.05 sec)
+Records: 8  Duplicates: 0  Warnings: 5
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> +----------+----------------------------------------------------+------+------------------------------------------------+
+| paper_id | title                                              | year | conference                                     |
++----------+----------------------------------------------------+------+------------------------------------------------+
+|        1 | structured embedding models for grouped data       | 2017 | NIPS                                           |
+|        2 | Topographic factor analysis: A Bayesian model for  | 2014 | PLoS ONE                                       |
+|        3 | Nonconvex finite-sum optimization via SCSG methods | 2018 | NIPS                                           |
+|        4 | Nonparametric combinatorial sequence models.       | 2011 | RECOMB                                         |
+|        5 | Inferring Cognitive Models from Data using Approxi | 2017 | SIGCHI                                         |
+|        6 | BLOG: Probabilistic Models with Unknown Objects.   | 2007 | Statistical Relational Learning                |
+|        7 | Blind Date: Using Proper Motions to Determine the  | 2008 | The Astronomical Journal                       |
+|        8 | Learning structures of Bayesian networks for varia | 2017 | International Journal of Approximate Reasoning |
++----------+----------------------------------------------------+------+------------------------------------------------+
+8 rows in set (0.06 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> Query OK, 0 rows affected (0.30 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]>     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     -> Query OK, 31 rows affected (0.04 sec)
+Records: 31  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> Query OK, 0 rows affected (0.41 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> Query OK, 1 row affected (0.06 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> Query OK, 1 row affected (0.04 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> Query OK, 1 row affected (0.04 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 8 rows affected (0.75 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> Query OK, 0 rows affected (0.27 sec)
+
+Query OK, 0 rows affected (0.64 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.56 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> Query OK, 33 rows affected (0.10 sec)
+Records: 33  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]>     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     ->     -> Query OK, 14 rows affected (0.04 sec)
+Records: 14  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> +-----------+--------------+---------------+
+| author_id | first_name   | last_name     |
++-----------+--------------+---------------+
+|         1 | M            | Rudolph       |
+|         2 | F            | Ruiz          |
+|         3 | S            | Athey         |
+|         4 | D            | Blei          |
+|         5 | J            | Manning       |
+|         6 | R            | Ranganath     |
+|         7 | K            | Norman        |
+|         8 | L            | Lei           |
+|         9 | C            | Ju            |
+|        10 | J            | Chen          |
+|        11 | M            | Jordan        |
+|        12 | F            | Wauthier      |
+|        13 | N            | Jojic         |
+|        14 | Antti        | Kangasraasio  |
+|        15 | Kumariprabha | Athukorala    |
+|        16 | Andrew       | Howes         |
+|        17 | Jukka        | Corander      |
+|        18 | Samuel       | Kaski         |
+|        19 | Antti        | Oulasvirta    |
+|        20 | B            | Milch         |
+|        21 | B            | Marthi        |
+|        22 | S            | Russell       |
+|        23 | D            | Sontag        |
+|        24 | D            | Ong           |
+|        25 | A            | Kolobov       |
+|        26 | Jonathan     | Barron        |
+|        27 | David        | Hogg          |
+|        28 | Dustin       | Lang          |
+|        29 | Sam          | Roweis        |
+|        30 | Pekka        | Parviainen    |
+|        31 | S            | Bhadra        |
+|        32 | Samy         | Bengio        |
+|        33 | Iulian       | Serban        |
+|        34 | Alessandro   | Sordoni       |
+|        35 | Ryan         | Lowe          |
+|        36 | Laurent      | Charlin       |
+|        37 | Joelle       | Pineau        |
+|        38 | Aaron        | Courville     |
+|        39 | Yoshua       | Ben_gio       |
+|        40 | Ian          | Goodfellow    |
+|        41 | Jean         | Pouget-Abadie |
+|        42 | Mehdi        | Mirza         |
+|        43 | Bing         | Xu            |
+|        44 | David        | Warde-Farley  |
+|        45 | Sherjil      | Ozair         |
++-----------+--------------+---------------+
+45 rows in set (0.06 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]>     -> Query OK, 1 row affected, 1 warning (0.04 sec)
+
+MariaDB [expert_system_2_libin_n_george]>     -> ERROR 1048 (23000): Column 'corresponding_author' cannot be null
+MariaDB [expert_system_2_libin_n_george]>     -> Query OK, 1 row affected (0.04 sec)
+
+MariaDB [expert_system_2_libin_n_george]> +----------+----------------------------------------------------+
+| paper_id | title                                              |
++----------+----------------------------------------------------+
+|       10 |                                                    |
+|        7 | Blind Date: Using Proper Motions to Determine the  |
+|        6 | BLOG: Probabilistic Models with Unknown Objects.   |
+|        5 | Inferring Cognitive Models from Data using Approxi |
+|        8 | Learning structures of Bayesian networks for varia |
+|        3 | Nonconvex finite-sum optimization via SCSG methods |
+|        4 | Nonparametric combinatorial sequence models.       |
+|        9 | Statistical machine learning for HCI               |
+|        1 | structured embedding models for grouped data       |
+|        2 | Topographic factor analysis: A Bayesian model for  |
++----------+----------------------------------------------------+
+10 rows in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]>     ->     ->     ->     ->     ->     ->     ->     ->     -> Query OK, 9 rows affected (0.07 sec)
+Records: 9  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]>     ->     ->     ->     ->     ->     -> +--------------+---------------+-------------+
+| first_name   | last_name     | paper_count |
++--------------+---------------+-------------+
+| M            | Rudolph       |           1 |
+| F            | Ruiz          |           1 |
+| S            | Athey         |           1 |
+| D            | Blei          |           2 |
+| J            | Manning       |           1 |
+| R            | Ranganath     |           1 |
+| K            | Norman        |           1 |
+| L            | Lei           |           1 |
+| C            | Ju            |           1 |
+| J            | Chen          |           1 |
+| M            | Jordan        |           2 |
+| F            | Wauthier      |           1 |
+| N            | Jojic         |           1 |
+| Antti        | Kangasraasio  |           1 |
+| Kumariprabha | Athukorala    |           1 |
+| Andrew       | Howes         |           1 |
+| Jukka        | Corander      |           1 |
+| Samuel       | Kaski         |           2 |
+| Antti        | Oulasvirta    |           1 |
+| B            | Milch         |           1 |
+| B            | Marthi        |           1 |
+| S            | Russell       |           1 |
+| D            | Sontag        |           1 |
+| D            | Ong           |           1 |
+| A            | Kolobov       |           1 |
+| Jonathan     | Barron        |           1 |
+| David        | Hogg          |           1 |
+| Dustin       | Lang          |           1 |
+| Sam          | Roweis        |           1 |
+| Pekka        | Parviainen    |           1 |
+| S            | Bhadra        |           0 |
+| Samy         | Bengio        |           1 |
+| Iulian       | Serban        |           0 |
+| Alessandro   | Sordoni       |           0 |
+| Ryan         | Lowe          |           0 |
+| Laurent      | Charlin       |           0 |
+| Joelle       | Pineau        |           0 |
+| Aaron        | Courville     |           1 |
+| Yoshua       | Ben_gio       |           1 |
+| Ian          | Goodfellow    |           1 |
+| Jean         | Pouget-Abadie |           1 |
+| Mehdi        | Mirza         |           1 |
+| Bing         | Xu            |           1 |
+| David        | Warde-Farley  |           1 |
+| Sherjil      | Ozair         |           1 |
++--------------+---------------+-------------+
+45 rows in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]>     ->     ->     ->     ->     ->     -> +----------+----------------------------------------------------+------+------------------------------------------------+----------------------+-------------+
+| paper_id | title                                              | year | conference                                     | corresponding_author | num_authors |
++----------+----------------------------------------------------+------+------------------------------------------------+----------------------+-------------+
+|        5 | Inferring Cognitive Models from Data using Approxi | 2017 | SIGCHI                                         |                   18 |           6 |
+|        1 | structured embedding models for grouped data       | 2017 | NIPS                                           |                    4 |           4 |
+|        8 | Learning structures of Bayesian networks for varia | 2017 | International Journal of Approximate Reasoning |                   18 |           2 |
++----------+----------------------------------------------------+------+------------------------------------------------+----------------------+-------------+
+3 rows in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]>     ->     ->     ->     -> +----------+----------------------------------------------------+------+------------------------------------------------+----------------------+
+| paper_id | title                                              | year | conference                                     | corresponding_author |
++----------+----------------------------------------------------+------+------------------------------------------------+----------------------+
+|        5 | Inferring Cognitive Models from Data using Approxi | 2017 | SIGCHI                                         |                   18 |
+|        8 | Learning structures of Bayesian networks for varia | 2017 | International Journal of Approximate Reasoning |                   18 |
++----------+----------------------------------------------------+------+------------------------------------------------+----------------------+
+2 rows in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> +------+
+| year |
++------+
+| 2017 |
++------+
+1 row in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]>     ->     ->     ->     ->     -> +----------+----------------------------------------------------+------+---------------------------------+----------------------+-------------+
+| paper_id | title                                              | year | conference                      | corresponding_author | num_authors |
++----------+----------------------------------------------------+------+---------------------------------+----------------------+-------------+
+|        1 | structured embedding models for grouped data       | 2017 | NIPS                            |                    4 |           4 |
+|        2 | Topographic factor analysis: A Bayesian model for  | 2014 | PLoS ONE                        |                    4 |           4 |
+|        3 | Nonconvex finite-sum optimization via SCSG methods | 2018 | NIPS                            |                    8 |           4 |
+|        4 | Nonparametric combinatorial sequence models.       | 2011 | RECOMB                          |                   11 |           3 |
+|        5 | Inferring Cognitive Models from Data using Approxi | 2017 | SIGCHI                          |                   18 |           6 |
+|        6 | BLOG: Probabilistic Models with Unknown Objects.   | 2007 | Statistical Relational Learning |                   23 |           6 |
+|        7 | Blind Date: Using Proper Motions to Determine the  | 2008 | The Astronomical Journal        |                   29 |           4 |
+|       10 |                                                    | 2014 | NIPS                            |                   40 |           8 |
++----------+----------------------------------------------------+------+---------------------------------+----------------------+-------------+
+8 rows in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]>     ->     ->     ->     -> +----------+----------------------------------------------------+------+----------------------------------------------------+----------------------+
+| paper_id | title                                              | year | conference                                         | corresponding_author |
++----------+----------------------------------------------------+------+----------------------------------------------------+----------------------+
+|        5 | Inferring Cognitive Models from Data using Approxi | 2017 | SIGCHI                                             |                   18 |
+|        7 | Blind Date: Using Proper Motions to Determine the  | 2008 | The Astronomical Journal                           |                   29 |
+|        8 | Learning structures of Bayesian networks for varia | 2017 | International Journal of Approximate Reasoning     |                   18 |
+|        9 | Statistical machine learning for HCI               | 2010 | Multimodal Signal Processing: Theory and Applicati |                   32 |
++----------+----------------------------------------------------+------+----------------------------------------------------+----------------------+
+4 rows in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]>     ->     ->     ->     -> +-----------+------------+-----------+
+| author_id | first_name | last_name |
++-----------+------------+-----------+
+|         8 | L          | Lei       |
+|         9 | C          | Ju        |
+|        10 | J          | Chen      |
+|        11 | M          | Jordan    |
+|        12 | F          | Wauthier  |
+|        13 | N          | Jojic     |
++-----------+------------+-----------+
+6 rows in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> ERROR 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`expert_system_2_libin_n_george`.`author_paper`, CONSTRAINT `author_paper_ibfk_2` FOREIGN KEY (`author_id`) REFERENCES `author` (`author_id`))
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]>     ->     -> +-----------+------------+-----------+
+| author_id | first_name | last_name |
++-----------+------------+-----------+
+|        39 | Yoshua     | Ben_gio   |
++-----------+------------+-----------+
+1 row in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> Query OK, 0 rows affected (0.00 sec)
+Rows matched: 45  Changed: 0  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> Query OK, 1 row affected (0.03 sec)
+Rows matched: 45  Changed: 1  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> +-----------+--------------+---------------+
+| author_id | first_name   | last_name     |
++-----------+--------------+---------------+
+|         1 | M            | Rudolph       |
+|         2 | F            | Ruiz          |
+|         3 | S            | Athey         |
+|         4 | D            | Blei          |
+|         5 | J            | Manning       |
+|         6 | R            | Ranganath     |
+|         7 | K            | Norman        |
+|         8 | L            | Lei           |
+|         9 | C            | Ju            |
+|        10 | J            | Chen          |
+|        11 | M            | Jordan        |
+|        12 | F            | Wauthier      |
+|        13 | N            | Jojic         |
+|        14 | Antti        | Kangasraasio  |
+|        15 | Kumariprabha | Athukorala    |
+|        16 | Andrew       | Howes         |
+|        17 | Jukka        | Corander      |
+|        18 | Samuel       | Kaski         |
+|        19 | Antti        | Oulasvirta    |
+|        20 | B            | Milch         |
+|        21 | B            | Marthi        |
+|        22 | S            | Russell       |
+|        23 | D            | Sontag        |
+|        24 | D            | Ong           |
+|        25 | A            | Kolobov       |
+|        26 | Jonathan     | Barron        |
+|        27 | David        | Hogg          |
+|        28 | Dustin       | Lang          |
+|        29 | Sam          | Roweis        |
+|        30 | Pekka        | Parviainen    |
+|        31 | S            | Bhadra        |
+|        32 | Samy         | Bengio        |
+|        33 | Iulian       | Serban        |
+|        34 | Alessandro   | Sordoni       |
+|        35 | Ryan         | Lowe          |
+|        36 | Laurent      | Charlin       |
+|        37 | Joelle       | Pineau        |
+|        38 | Aaron        | Courville     |
+|        39 | Yoshua       | Ben-gio       |
+|        40 | Ian          | Goodfellow    |
+|        41 | Jean         | Pouget-Abadie |
+|        42 | Mehdi        | Mirza         |
+|        43 | Bing         | Xu            |
+|        44 | David        | Warde-Farley  |
+|        45 | Sherjil      | Ozair         |
++-----------+--------------+---------------+
+45 rows in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> +----------------------+-------------+------+-----+---------+----------------+
+| Field                | Type        | Null | Key | Default | Extra          |
++----------------------+-------------+------+-----+---------+----------------+
+| paper_id             | int(11)     | NO   | PRI | NULL    | auto_increment |
+| title                | varchar(50) | NO   | UNI | NULL    |                |
+| year                 | int(11)     | NO   |     | NULL    |                |
+| conference           | varchar(50) | NO   |     | NULL    |                |
+| corresponding_author | int(11)     | NO   | MUL | NULL    |                |
++----------------------+-------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> Query OK, 0 rows affected (0.07 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> +----------------------+-------------+------+-----+---------+----------------+
+| Field                | Type        | Null | Key | Default | Extra          |
++----------------------+-------------+------+-----+---------+----------------+
+| paper_id             | int(11)     | NO   | PRI | NULL    | auto_increment |
+| title                | varchar(50) | NO   | UNI | NULL    |                |
+| year                 | int(11)     | NO   |     | NULL    |                |
+| venue                | varchar(50) | NO   |     | NULL    |                |
+| corresponding_author | int(11)     | NO   | MUL | NULL    |                |
++----------------------+-------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> Query OK, 0 rows affected (0.45 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [expert_system_2_libin_n_george]> MariaDB [expert_system_2_libin_n_george]> +----------------------+-------------------+------+-----+---------+----------------+
+| Field                | Type              | Null | Key | Default | Extra          |
++----------------------+-------------------+------+-----+---------+----------------+
+| paper_id             | int(11)           | NO   | PRI | NULL    | auto_increment |
+| title                | varchar(50)       | NO   | UNI | NULL    |                |
+| year                 | int(11)           | NO   |     | NULL    |                |
+| venue                | varchar(50)       | NO   |     | NULL    |                |
+| corresponding_author | int(11)           | NO   | MUL | NULL    |                |
+| type                 | enum('C','J','W') | NO   |     | NULL    |                |
++----------------------+-------------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
