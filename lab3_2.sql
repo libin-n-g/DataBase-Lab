@@ -62,7 +62,7 @@ CREATE VIEW tot_C AS SELECT tot_cred from student;
 SELECT COUNT(tot_cred) FROM tot_C;
 
 SELECT COUNT(tot_cred) FROM tot_C WHERE tot_cred IS NOT NULL;
-
+-- Count does not avoid null
 select dept_name FROM (SELECT D.dept_name, AVG(D.salary)
 AS avg_salary FROM instructor AS D
 GROUP BY D.dept_name) AS DD WHERE DD.avg_salary = (SELECT MAX(DE.avg_salary) FROM 
