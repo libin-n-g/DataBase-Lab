@@ -63,7 +63,7 @@ END; //
 DELIMITER ;
 
 ALTER table menu
-add spicy VARCHAR(2)
+add spicy VARCHAR(2);
 
 
 DELIMITER //
@@ -75,4 +75,5 @@ BEGIN
     SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'wrong spicy level!';
   END IF;
 END; //
+
 DELIMITER ;

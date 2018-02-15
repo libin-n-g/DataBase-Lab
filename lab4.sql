@@ -54,6 +54,8 @@ SELECT AVG(D.budget) INTO avg_buget FROM (SELECT * FROM department ORDER BY budg
 
 END;//
 DELIMITER ;
+
+
 set @avg = 0;
 call sp_top_avg(3, @avg);
 select @avg;
@@ -73,6 +75,7 @@ UPDATE department SET budget=(avg_buget/2) where budget< avg_buget/2;
 END;//
 DELIMITER ;
 
-call update_budget()
+call update_budget();
 
 select * from department;
+
